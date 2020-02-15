@@ -1,0 +1,69 @@
+/*font style*/
+
+.font-12{
+    font-size: 12px !important;
+}
+
+.font-13{
+    font-size: 13px !important;
+}
+
+.font-14{
+    font-size: 14px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.font-35{
+    font-size: 35px;
+}
+
+.font-50{
+    font-size: 55px;
+}
+
+.vertical-25 {
+    margin-top: 25%;
+}
+
+.vertical-15 {
+    margin-top: 15%;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vh-90 {
+    height: 90vh;
+}
+
+
+.text_primary{
+    color: #164E35 !important;
+}
+
+.dull-bold{
+    font-weight: 600;
+}
+
+
+@media (min-width: 320px) and (max-width:720px){
+    .font-35{
+        font-size: 25px;
+    }
+
+    .text-md-left {
+        text-align: inherit !important;
+    }
+
+    .font-50{
+        font-size: 30px;
+    }
+}

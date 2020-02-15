@@ -1,0 +1,363 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=auto";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=auto');
+@import url('variables.css');
+@import url('fonts/circular-std/css/circular-std.css');
+@import url('fonts/newfont.css');
+
+:root {
+    --primary-color : #333;
+}
+
+@font-face {
+    font-family: wf_586174e184d34abaaeb95dd3e;
+    font-display : auto;
+    src: url("fonts/wf_586174e184d34abaaeb95dd3e/file.woff") format("woff"),
+        url("fonts/wf_586174e184d34abaaeb95dd3e/file.woff2") format("woff2"),
+        url("fonts/wf_586174e184d34abaaeb95dd3e/file.ttf") format("ttf");
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    background-color: #ffffff !important;
+}
+
+body.landing {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 17px !important;
+    background-color: #fff !important;
+    overflow-x: hidden !important;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.wf_7baf2059d414453a9b61affe1 {
+    font-family:wfont_f78a30_7baf2059d414453a9b61affe1b0574cb,wf_7baf2059d414453a9b61affe1,orig_american_typewriter_bold !important;
+}
+
+
+.font-circular {
+    font-family: 'CircularStd-book' !important;
+}
+
+nav.active_nav {
+    box-shadow: 11px 15px 29px 0 rgba(48,48,48,0.07);
+    background: #fff;
+    transition: 0.8s;
+}
+
+.nav-link {
+    font-size: 15px !important;
+    font-weight: 500;
+}
+.navbar .nav-item .nav-link:hover::before {
+    width: 100% !important;
+}
+
+.navbar .nav-item .nav-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 1px;
+    bottom: 5px;
+    z-index: 1;
+    background: #fff;
+    transition: width 0.3s ease-out;
+}
+
+.landing-page a.nav-link {
+    color: var(--primary-color) !important;
+}
+
+.height_100vh {
+    height: 100vh;
+}
+
+.landing-text-primary {
+    color: var(--primary-color)
+}
+
+.btn-white {
+    background: #ffffff;
+    color: #3152dc !important;
+    border-radius: 50px !important;
+    font-size: 13px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.font-semi-bold {
+    font-weight: 600 !important;
+}
+
+.vertical-10 {
+    margin-top: 20vh;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.pastor_message p {
+    font-size: 22px;
+}
+
+.pastor_message p::after, .pastor_message p::before {
+    content: '“';
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+.main_gallery_link {
+    color: #fff !important;
+}
+
+.main_gallery_link:hover {
+    color: #fff !important;
+    text-decoration: 2px underline !important;
+}
+
+.top_gallery_caption {
+    color: #fff;
+}
+
+.top_gallery_caption p {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a.sub_gallery_link {
+    color: #000 !important;
+}
+
+.sub_gallery_caption {
+    font-size: 16px;
+    color: #000;
+    font-weight: lighter;
+}
+
+.sub_gallery_caption::before {
+    content: "";
+    display: block;
+    background-image: linear-gradient(270deg,#37003c,#963cff);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .4s;
+    width: 90%;
+    height: .4rem;
+}
+
+
+.blog {
+    /*    border: solid 1px #D8D8D8;*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.blog__text {
+    padding: 0 20px 20px;
+}
+
+.blog__title a {
+    font-size: 1.6rem;
+    font-family: 'CircularStd-book' !important;
+    font-weight: 400;
+    color: #303030 !important;
+}
+
+.blog a {
+    color: #03f;
+}
+
+.blog__image:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    outline: none;
+    transition: 0.5s;
+}
+
+.blog__category {
+    color: #03f !important;
+    outline: none;
+    margin-top: 9px;
+    font-family: "Source Sans Pro",sans-serif;
+}
+
+.blog__category  > a {
+    outline: none;
+    text-decoration: none;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+.blog__category  > a:hover {
+    color: #f6921e;
+    outline: none;
+    text-decoration: none;
+}
+
+.blog__author, .blog__author a {
+    font-size: 13px !important;
+}
+
+/*footer section*/
+.title {
+    font-size: 22px;
+    padding: 12px 0 25px;
+    color: #38a0f6;
+    color: #333333;
+    font-weight: normal;
+}
+
+.about-widget .email {
+    font-size: 18px;
+    color: #333333;
+    margin: 15px 0 15px;
+    display: block;
+}
+
+.phone {
+    font-size: 22px;
+    color: #333333;
+}
+
+.footer-bg {
+    /*    background-color: #ccd9e3;*/
+    font-family: 'poppins';
+
+}
+
+.footer-list ul li a {
+    display: block;
+    line-height: 38px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.footer-list ul li a:hover {
+    color: #3152dc;
+    text-decoration: none;
+}
+
+
+.footer-information p {
+    padding: 0 0 10px;
+    color: #333333;
+}
+
+.footer-information ul li {
+    display: inline-block;
+}
+
+.footer-information ul li a {
+    width: 40px !important;
+    height: 40px !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 50% !important;
+    text-align: center !important;
+    /*    line-height: 40px !important;*/
+    color: #dbdbdb !important;
+    margin-right: 10px !important;
+}
+
+.bottom-footer {
+    border-top: 1px solid #ededed;
+    margin-top: 90px;
+    padding: 35px 0;
+}
+
+.bottom-footer p {
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.bottom-footer ul {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.bottom-footer ul li {
+    display: inline-block;
+}
+
+.bottom-footer ul li a {
+    line-height: 28px;
+    color: #333;
+    margin: auto 15px;
+}
+
+.bottom-footer ul li a:hover {
+    color: #3152dc;
+    text-decoration: none;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
+.subscription input {
+    height: 60px;
+    margin-bottom: 50px;
+    padding: 23px 30px 25px;
+    border: 0px #000;
+    background-color: #fff;
+    color: #1a27c9;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+.subscription input::placeholder {
+    font-size: 20px;
+}
+
+.subscription .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #0D0E0E;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.0);
+}
+
+@media (min-width : 320px) and (max-width: 720px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .bottom-footer ul li a {
+        line-height: 28px;
+        color: #333;
+        margin-left: 0px;
+    }
+
+    .bottom-footer ul {
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+}
+
+input:-internal-autofill-selected {
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+
+.no-padding {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    overflow: hidden;
+}
+
+.align {
+    align-content: center !important;
+}

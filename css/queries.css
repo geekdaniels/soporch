@@ -1,0 +1,18 @@
+@media (min-width:320px) and (max-width:1024px) {
+    .height_normalize{
+        height: auto !important;
+    }
+
+    .shape-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+         height: auto;
+        z-index: 2;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        overflow: hidden;
+        bottom: -1%;
+    }
+}
