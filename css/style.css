@@ -392,14 +392,24 @@ a.sub_gallery_link {
         height: 30vh !important;
         background-size: contain !important;
     }
+
+
+    .live-feed {
+        height: auto;
+    }
 }
 
 
 @media (min-width: 720px) and (max-width: 860px){
     .height_normalize {
         height: 30vh !important;
-/*        background-size: contain !important;*/
     }
+
+
+    .live-feed {
+        height: auto;
+    }
+
 }
 
 

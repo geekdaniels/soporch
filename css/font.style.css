@@ -54,7 +54,7 @@
 }
 
 
-@media (min-width: 320px) and (max-width:720px){
+@media (min-width: 320px) and (max-width:800px){
     .font-35{
         font-size: 25px;
     }
@@ -65,5 +65,9 @@
 
     .font-50{
         font-size: 30px;
+    }
+
+    .vh-85 {
+        height: auto;
     }
 }
