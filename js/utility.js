@@ -2,12 +2,9 @@
 
 //   js index
 /* =================== */
-/*  
 
 
 
-
-*/
 // -----------------------------
 
 
@@ -26,6 +23,78 @@
             fade: true,
             cssEase: 'linear'
         });
+    }
+
+    if($('.church_events').length){
+        $('.church_events').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        //        $('.church_events').slick({
+        //            slidesToShow: 3,
+        //            slidesToScroll: 1,
+        //            autoplay: false,
+        //            autoplaySpeed: 2000,
+        //            arrows: false,
+        //            dots: false,
+        //            pauseOnHover: false,
+        //            responsive: [
+        //                {
+        //                    breakpoint: 1024,
+        //                    settings: {
+        //                        slidesToShow: 3,
+        //                        slidesToScroll: 3,
+        //                        infinite: true,
+        //                        dots: true
+        //                    }
+        //                },
+        //                {
+        //                    breakpoint: 600,
+        //                    settings: {
+        //                        slidesToShow: 2,
+        //                        slidesToScroll: 2
+        //                    }
+        //                },
+        //                {
+        //                    breakpoint: 480,
+        //                    settings: {
+        //                        slidesToShow: 1,
+        //                        slidesToScroll: 1
+        //                    }
+        //                }
+        //            ]
+        //        });
     }
 
 
@@ -89,12 +158,12 @@
 
 }(jQuery));
 
-$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 10) {
-        $('nav').addClass('active_nav');
-    } else {
-        $('nav').removeClass('active_nav');
-    }
-});
+//$(document).scroll(function () {
+//    var y = $(this).scrollTop();
+//    if (y > 10) {
+//        $('nav').addClass('active_nav');
+//    } else {
+//        $('nav').removeClass('active_nav');
+//    }
+//});
 

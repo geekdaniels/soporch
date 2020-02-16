@@ -53,8 +53,9 @@ nav.active_nav {
     font-size: 15px !important;
     font-weight: 500;
 }
-.navbar .nav-item .nav-link:hover::before {
-    width: 100% !important;
+
+.navbar .nav-item .nav-link:hover {
+    color: #3c6 !important;
 }
 
 .navbar .nav-item .nav-link::before {
@@ -73,8 +74,21 @@ nav.active_nav {
     color: var(--primary-color) !important;
 }
 
+.mobile-slide__top {
+    margin-top: 90px;
+}
+
 .height_100vh {
     height: 100vh;
+}
+
+.height_100{
+    height: 100vh !important;
+}
+
+
+.height_normalize {
+    background-size: cover !important;
 }
 
 .landing-text-primary {
@@ -90,7 +104,7 @@ nav.active_nav {
 }
 
 .font-semi-bold {
-    font-weight: 600 !important;
+    font-weight: 500 !important;
 }
 
 .vertical-10 {
@@ -145,6 +159,7 @@ a.sub_gallery_link {
     content: "";
     display: block;
     background-image: linear-gradient(270deg,#37003c,#963cff);
+    background-image: linear-gradient(270deg,#3c6,#063);
     top: 0;
     left: 0;
     right: 0;
@@ -152,6 +167,21 @@ a.sub_gallery_link {
     transition: .4s;
     width: 90%;
     height: .4rem;
+}
+
+.live-feed {
+    height: 85vh;
+}
+
+.live-feed__background {
+    -webkit-clip-path: polygon(0 0,100% 0,50% 100%,0 100%);
+    background-color: #3c6;
+    display: block;
+    clip-path: polygon(0 0,30% 0,14% 100%,0 100%);
+    height: auto;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 
@@ -302,6 +332,20 @@ a.sub_gallery_link {
     background: transparent;
 }
 
+.parallax-window::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    /*    right: 0;*/
+    left: 0;
+    /*    bottom: 0;*/
+    z-index: -1;
+    height: 100%;
+    background-image: linear-gradient(120deg, #000, #33d0ff);
+    opacity: .6;
+}
 
 .subscription input {
     height: 60px;
@@ -342,7 +386,22 @@ a.sub_gallery_link {
         margin-top: 20px;
         padding-left: 0px;
     }
+
+
+    .height_normalize {
+        height: 30vh !important;
+        background-size: contain !important;
+    }
 }
+
+
+@media (min-width: 720px) and (max-width: 860px){
+    .height_normalize {
+        height: 30vh !important;
+/*        background-size: contain !important;*/
+    }
+}
+
 
 input:-internal-autofill-selected {
     background-color: rgb(255, 255, 255) !important;
